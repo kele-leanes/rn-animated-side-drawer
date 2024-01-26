@@ -27,11 +27,12 @@ export default function SideDrawer() {
           overlayColor: 'transparent',
           drawerActiveBackgroundColor: `${colors.secondary}50`,
           drawerActiveTintColor: colors.secondary,
+          drawerInactiveTintColor: colors.white,
           drawerLabelStyle: {
-            fontSize: 16,
+            fontSize: 20,
           },
           drawerItemStyle: {
-            borderRadius: 8,
+            borderRadius: 12,
             paddingHorizontal: 8,
           },
           drawerStyle: {
@@ -39,9 +40,6 @@ export default function SideDrawer() {
             width: '50%',
           },
           drawerContentContainerStyle: {
-            backgroundColor: colors.primary,
-          },
-          sceneContainerStyle: {
             backgroundColor: colors.primary,
           },
         }}>

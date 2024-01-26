@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
+import { Layout } from '../../components';
 
 export default function ContactScreen(): React.JSX.Element {
   return (
-    <View>
+    <Layout>
       <Text>ContactScreen</Text>
-    </View>
+    </Layout>
   );
 }

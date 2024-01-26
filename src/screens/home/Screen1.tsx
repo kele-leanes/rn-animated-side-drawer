@@ -1,15 +1,16 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Button } from 'react-native';
+import { Layout } from '../../components';
 
 export default function Screen1(): React.JSX.Element {
   const navigation = useNavigation();
   return (
-    <View>
-      <Text>Screen1</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Screen2')}>
-        <Text>Go to Screen2</Text>
-      </TouchableOpacity>
-    </View>
+    <Layout>
+      <Button
+        title="Go to Screen 2"
+        onPress={() => navigation.navigate('Screen2')}
+      />
+    </Layout>
   );
 }

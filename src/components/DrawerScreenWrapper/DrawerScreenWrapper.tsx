@@ -22,11 +22,13 @@ export default function DrawerScreenWrapper({
   const animatedStyles = useAnimatedStyle(() => {
     const translateXValue = interpolate(progress.value, [0, 1], [0, 60]);
     const rotateValue = interpolate(progress.value, [0, 1], [0, -8]);
+    const borderRadiusValue = interpolate(progress.value, [0, 1], [0, 32]);
     return {
       transform: [
         { translateX: translateXValue },
         { rotate: `${rotateValue}deg` },
       ],
+      borderTopLeftRadius: borderRadiusValue,
     };
   });
 
@@ -52,7 +54,6 @@ const styles = StyleSheet.create({
   },
   view: {
     flex: 1,
-    borderTopLeftRadius: 32,
     overflow: 'hidden',
   },
 });
